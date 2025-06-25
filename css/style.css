@@ -34,7 +34,7 @@ header {
 
 .logo img {
     width: 6vw;
-    height: 7vh;
+    height: auto;
 }
 
 #title {
@@ -261,20 +261,28 @@ nav.active ul li {
         /* padding: 1rem; */
     }
 
-  #logo-mobile {
-    display: block;
-    width: 50vw;
-    height: 12vh;
-  }
-  
-    .logo h1, #slogan, #logo-desktop {
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
+    #logo-mobile {
+        display: block;
+        width: 40vw;
+        height: auto;
+    }
+
+    .logo h1,
+    #slogan,
+    #logo-desktop {
         display: none;
     }
-   
+
 
     nav ul {
         display: none;
-        margin-top:-1.5rem;
+        margin-top: -1.5rem;
         justify-content: center;
     }
 
